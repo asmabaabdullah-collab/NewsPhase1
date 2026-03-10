@@ -265,23 +265,8 @@ if run:
         for point in analysis.get("key_points", []):
             st.markdown(f"- {point}")
 
-       ''' c1, c2, c3, c4 = st.columns(4)
-        with c1:
-            st.subheader("Prominent People")
-            people = analysis.get("prominent_people", [])
-            st.write("\n".join([f"• {x}" for x in people]) if people else "Not available")
-        with c2:
-            st.subheader("Organizations")
-            orgs = analysis.get("organizations", [])
-            st.write("\n".join([f"• {x}" for x in orgs]) if orgs else "Not available")
-        with c3:
-            st.subheader("Locations")
-            locations = analysis.get("locations", [])
-            st.write("\n".join([f"• {x}" for x in locations]) if locations else "Not available")
-        with c4:
-            st.subheader("Dates")
-            dates = analysis.get("dates", [])
-            st.write("\n".join([f"• {x}" for x in dates]) if dates else "Not available")'''
+       ### c1, c2, c3, c4 = st.columns(4)
+        
 
     with tab2:
         st.subheader("Related Sources Found")
