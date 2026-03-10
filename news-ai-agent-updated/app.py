@@ -265,7 +265,7 @@ if run:
         for point in analysis.get("key_points", []):
             st.markdown(f"- {point}")
 
-        c1, c2, c3, c4 = st.columns(4)
+       ''' c1, c2, c3, c4 = st.columns(4)
         with c1:
             st.subheader("Prominent People")
             people = analysis.get("prominent_people", [])
@@ -281,7 +281,7 @@ if run:
         with c4:
             st.subheader("Dates")
             dates = analysis.get("dates", [])
-            st.write("\n".join([f"• {x}" for x in dates]) if dates else "Not available")
+            st.write("\n".join([f"• {x}" for x in dates]) if dates else "Not available")'''
 
     with tab2:
         st.subheader("Related Sources Found")
